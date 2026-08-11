@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prediction Result | SmartWaste</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+     ===================================================== -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        ♻ SmartWaste
+    </div>
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="/">Home</a>
+        </li>
+
+        <li>
+            <a href="/predict">Predict Again</a>
+        </li>
+
+        <li>
+            <a href="/dashboard">Dashboard</a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+
+<!-- =====================================================
+     RESULT PAGE
+     ===================================================== -->
+
+<section class="result-page">
+
+    <div class="result-container">
+
+
+        <!-- ICON -->
+
+        <div class="result-main-icon">
+            ♻️
+        </div>
+
+
+        <!-- TITLE -->
+
+        <h1>
+            Prediction Result
+        </h1>
+
+        <p class="result-subtitle">
+            SmartWaste has analyzed the submitted
+            waste information.
+        </p>
+
+
+
+        <!-- =================================================
+             PRIORITY
+             ================================================= -->
+
+        {% if priority == "High" %}
+
+            <div class="result-priority result-high">
+
+                🔴 HIGH PRIORITY
+
+            </div>
+
+
+        {% elif priority == "Medium" %}
+
+            <div class="result-priority result-medium">
+
+                🟠 MEDIUM PRIORITY
+
+            </div>
+
+
+        {% else %}
+
+            <div class="result-priority result-low">
+
+                🟢 LOW PRIORITY
+
+            </div>
+
+        {% endif %}
+
+
+
+        <!-- =================================================
+             DETAILS
+             ================================================= -->
+
+        <div class="result-details">
+
+
+            <div class="result-row">
+
+                <span class="result-label">
+                    📍 Waste Area
+                </span>
+
+                <span>
+                    {{ area }}
+                </span>
+
+            </div>
+
+
+            <div class="result-row">
+
+                <span class="result-label">
+                    🗑 Waste Quantity
+                </span>
+
+                <span>
+                    {{ quantity }} kg
+                </span>
+
+            </div>
+
+
+            <div class="result-row">
+
+                <span class="result-label">
+                    ⏱ Collection Delay
+                </span>
+
+                <span>
+                    {{ delay }} days
+                </span>
+
+            </div>
+
+
+            <div class="result-row">
+
+                <span class="result-label">
+                    🎯 Priority
+                </span>
+
+                <span>
+                    {{ priority }}
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             MESSAGE
+             ================================================= -->
+
+        {% if priority == "High" %}
+
+            <div class="result-message high-message">
+
+                <h2>
+                    ⚠ Immediate Attention Required
+                </h2>
+
+                <p>
+                    This waste has been classified as
+                    high priority and should be collected
+                    as soon as possible.
+                </p>
+
+            </div>
+
+
+        {% elif priority == "Medium" %}
+
+            <div class="result-message medium-message">
+
+                <h2>
+                    ⚡ Scheduled Collection Recommended
+                </h2>
+
+                <p>
+                    This waste requires timely collection
+                    and should be handled according to
+                    the regular collection schedule.
+                </p>
+
+            </div>
+
+
+        {% else %}
+
+            <div class="result-message low-message">
+
+                <h2>
+                    ✅ Regular Collection
+                </h2>
+
+                <p>
+                    This waste is classified as low priority
+                    and can be handled during the regular
+                    collection schedule.
+                </p>
+
+            </div>
+
+        {% endif %}
+
+
+
+        <!-- =================================================
+             BUTTONS
+             ================================================= -->
+
+        <div class="result-actions">
+
+
+            <a
+                href="/predict"
+                class="result-action primary-action"
+            >
+                🔄 Predict Again
+            </a>
+
+
+            <a
+                href="/"
+                class="result-action secondary-action"
+            >
+                🏠 Back to Home
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SmartWaste Priority System</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        ♻ SmartWaste
+    </div>
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="/">Home</a>
+        </li>
+
+        <li>
+            <a href="/predict">Predict</a>
+        </li>
+
+        <li>
+            <a href="/dashboard">Dashboard</a>
+        </li>
+
+        <li>
+            <a href="#about">About</a>
+        </li>
+
+    </ul>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="full-hero">
+
+
+    <!-- HOME PAGE IMAGE -->
+
+    <img
+        src="{{ url_for('static', filename='images/waste-management.png') }}"
+        alt="Smart Waste Management"
+        class="full-hero-image"
+    >
+
+
+    <!-- DARK OVERLAY -->
+
+    <div class="full-hero-overlay"></div>
+
+
+    <!-- HERO CONTENT -->
+
+    <div class="full-hero-content">
+
+
+        <div class="hero-small-title">
+
+            ♻ SMART WASTE MANAGEMENT
+
+        </div>
+
+
+        <h1>
+
+            SmartWaste<br>
+            Priority System
+
+        </h1>
+
+
+        <p>
+
+            Make waste collection smarter, faster and more efficient.
+            Analyze waste quantity and collection delay to determine
+            the right collection priority.
+
+        </p>
+
+
+        <a
+            href="/predict"
+            class="full-predict-btn"
+        >
+
+            🔍 Predict Waste Priority
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section
+    class="features-section"
+    id="about"
+>
+
+
+    <div class="features-container">
+
+
+        <!-- CARD 1 -->
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                ♻️
+            </div>
+
+            <h3>
+                Smart Detection
+            </h3>
+
+            <p>
+
+                Automatically analyzes waste data
+                and calculates priority for efficient
+                collection.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- CARD 2 -->
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🚛
+            </div>
+
+            <h3>
+                Fast Collection
+            </h3>
+
+            <p>
+
+                High priority waste gets collected
+                first, reducing unnecessary delays.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- CARD 3 -->
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🌱
+            </div>
+
+            <h3>
+                Clean Environment
+            </h3>
+
+            <p>
+
+                Better waste management creates
+                a cleaner and healthier environment.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PRIORITY ================= -->
+
+<section class="priority-section">
+
+
+    <div class="priority-title">
+
+        <h2>
+            Waste Collection Priority
+        </h2>
+
+        <p>
+
+            Our system classifies waste based on
+            quantity and collection delay.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="priority-container">
+
+
+        <!-- HIGH -->
+
+        <div class="priority-card high-priority">
+
+            <div class="priority-icon">
+                🔴
+            </div>
+
+            <h3>
+                High Priority
+            </h3>
+
+            <p>
+
+                Immediate waste collection
+                is required.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- MEDIUM -->
+
+        <div class="priority-card medium-priority">
+
+            <div class="priority-icon">
+                🟡
+            </div>
+
+            <h3>
+                Medium Priority
+            </h3>
+
+            <p>
+
+                Schedule for regular
+                waste collection.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- LOW -->
+
+        <div class="priority-card low-priority">
+
+            <div class="priority-icon">
+                🟢
+            </div>
+
+            <h3>
+                Low Priority
+            </h3>
+
+            <p>
+
+                Can be collected during
+                the normal collection cycle.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+
+    <div class="footer-content">
+
+
+        <h3>
+            ♻ SmartWaste
+        </h3>
+
+
+        <p>
+            Smart Waste Management & Priority System
+        </p>
+
+
+        <div class="footer-links">
+
+            <a href="/">
+                Home
+            </a>
+
+            <a href="/predict">
+                Predict
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+        </div>
+
+
+        <p class="copyright">
+
+            © 2026 SmartWaste Priority System.
+            All Rights Reserved.
+
+        </p>
+
+        <div class="developer-box">
+            
+    <span class="developer-label">
+      
+       
+    </span>
+
+    <div class="name-box">
+        DEVELOPED BY
+    NATAM PAVANSAI
+</div>
+    <span class="developer-name">
+        
+    </span>
+
+</div>
+
+
+    </div>
+
+
+</footer>
+
+
+
+</body>
+
+</html>
