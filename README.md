@@ -86,3 +86,19 @@ B.Tech – Computer Science Engineering
 
 ### 📋 Prediction Records
 ![Prediction Records](prediction-records.png)
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home Page](home-page.png.png)
+
+### 🎯 Prediction Form
+![Prediction Form](prediction-form.png.png)
+
+### ✅ Prediction Result
+![Prediction Result](prediction-result.png.png)
+
+### 📊 Admin Dashboard
+![Admin Dashboard](admin-dashboard.png)
+
+### 🔍 Search Predictions
+![Search Predictions](search-predictions.png.png)
