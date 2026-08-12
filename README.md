@@ -72,3 +72,17 @@ The main objective of this project is to help waste management teams identify hi
 **NATAM PAVANSAI**
 
 B.Tech – Computer Science Engineering
+
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home Page](home-page.png)
+
+### 🎯 Prediction Result
+![Prediction Result](prediction-result.png)
+
+### 📊 Admin Dashboard
+![Admin Dashboard](admin-dashboard.png)
+
+### 📋 Prediction Records
+![Prediction Records](prediction-records.png)
