@@ -75,30 +75,5 @@ B.Tech – Computer Science Engineering
 
 ## 📸 Screenshots
 
-### 🏠 Home Page
-![Home Page](home-page.png)
+Project screenshots are available in the repository files.
 
-### 🎯 Prediction Result
-![Prediction Result](prediction-result.png)
-
-### 📊 Admin Dashboard
-![Admin Dashboard](admin-dashboard.png)
-
-### 📋 Prediction Records
-![Prediction Records](prediction-records.png)
-## 📸 Screenshots
-
-### 🏠 Home Page
-![Home Page](home-page.png.png)
-
-### 🎯 Prediction Form
-![Prediction Form](prediction-form.png.png)
-
-### ✅ Prediction Result
-![Prediction Result](prediction-result.png.png)
-
-### 📊 Admin Dashboard
-![Admin Dashboard](admin-dashboard.png)
-
-### 🔍 Search Predictions
-![Search Predictions](search-predictions.png.png)
